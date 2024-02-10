@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizEndModel">
+
+    <ImageView
+        android:id="@+id/quiz_wave"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_home_wave"></ImageView>
+
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz_wave"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Total Score: "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/totalWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalScore"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Total Wrong: "
+        android:textColor="@color/black"
+        android:textSize="30sp"></TextView>
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/totalWrong"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="FINISH QUIZ"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"></Button>
+
+
+</RelativeLayout>
+
